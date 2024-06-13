@@ -139,7 +139,7 @@ def main_app():
     st.title("Cyber Survey Tool")
     uploaded_zip = st.file_uploader("Upload ZIP file containing documents", type=['zip'])
     requirement = st.selectbox("Select Functional Requirement", list(keywords_data.keys()))
-    excel_path = "C:\\Users\\637848\\OneDrive - BOOZ ALLEN HAMILTON\\Desktop\\Cyber (ASCA) Contract\\Project Info\\Cyber Survey Application Info\\Test_Assessment_General_RMF_Export.xlsx"
+    excel_path = r"C:\Cyber Survey Tool\Test_Assessment_General_RMF_Export.xlsx"
 
     if uploaded_zip and st.button("Search Documents"):
         temp_file_path = save_uploaded_file(uploaded_zip)
